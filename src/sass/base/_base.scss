@@ -1,3 +1,47 @@
-p{
-    color: blue;
+// Google fonts import
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+// VARAIBLES
+// Primary Colors
+$color-primary-soft-orange: hsl(35, 77%, 62%);
+$color-primary-soft-red: hsl(5, 85%, 63%);
+
+// Neutral Colors
+$color-neutral-off-white: hsl(36, 100%, 99%);
+$color-neutral-grayish-blue: hsl(233, 8%, 79%);
+$color-neutral-dark-grayish-blue: hsl(236, 13%, 42%);
+$color-neutral-very-dark-blue: hsl(240, 100%, 5%);
+
+// Typography
+$font-primary: "Inter", sans-serif;
+$font-regular: 400;
+$font-bold: 700;
+$font-extrabold: 800;
+
+// Spacing System (rem)
+// Based on a 7.5px baseline (1rem = 15px, 0.5rem = 7.5px)
+$base-spacing: 1rem; // 15px
+
+$spacing-none: 0;        // 0px
+$spacing-xxs:  0.25rem;  // 3.75px  (0.25 * 15)
+$spacing-xs:   0.5rem;  // 7.5px   (0.5 * 15)
+$spacing-sm:   0.75rem;  // 11.25px (0.75 * 15)
+$spacing-md:   1rem;    // 15px    (1 * 15)
+$spacing-lg:   1.5rem;  // 22.5px  (1.5 * 15)
+$spacing-xl:   2rem;    // 30px    (2 * 15)
+$spacing-xxl:  3rem;    // 45px    (3 * 15)
+$spacing-xxxl: 4rem;    // 60px    (4 * 15)
+
+// Media queries
+$breakpoint-small: 37.5em; // 600px
+$breakpoint-medium: 56.25em; // 900px
+$breakpoint-large: 75em; // 1200px
+$breakpoint-extra-large: 112.5em; // 1800px
+
+:root {
+  font-size: 93.75%;
+}
+
+body {
+  font-family: $font-primary;
 }
