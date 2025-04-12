@@ -1,0 +1,18 @@
+.latest-section {
+  background-color: $color-neutral-very-dark-blue;
+  padding: $spacing-md;
+
+  &__item{
+    padding: $spacing-xl 0;
+  }
+
+  &__item:not(:last-of-type) {
+    border-bottom: 1px solid $color-neutral-dark-grayish-blue;
+  }
+
+  .heading-3 {
+    color: $color-neutral-off-white;
+    font-weight: $font-bold;
+    margin-bottom: $spacing-xs;
+  }
+}
