@@ -1,0 +1,36 @@
+%flex-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+}
+
+.header{
+    width: min(90vw, 1111px);
+    margin: 0 auto;
+    @extend %flex-mobile;
+
+    &__intro{
+        @extend %flex-mobile
+    }
+
+    &__cta{
+        @extend %flex-mobile
+    }
+
+    .cta-btn{
+        text-decoration: none;
+        display: block;
+        background-color: $color-primary-soft-red;
+        width: max-content;
+        color: $color-neutral-very-dark-blue;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        padding: $spacing-sm $spacing-xl;
+        letter-spacing: 2px;
+
+        &:active, &:hover{
+            color: $color-neutral-off-white;
+            background: $color-neutral-very-dark-blue;
+        }
+    }
+}
