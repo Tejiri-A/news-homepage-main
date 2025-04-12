@@ -1,22 +1,12 @@
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
 
+@import "layout/navigation";
+@import "layout/sections";
+@import "layout/header";
+@import "layout/highlights";
+@import "layout/latest";
 
-@import 'base/reset';
-@import 'base/typography';
-@import 'base/base';
-@import 'base/utilities';
-
-
-
-@import 'layout/navigation'; // Could be here or in components
-@import 'layout/sections';
-@import 'layout/header';
-@import 'layout/highlights';
-@import 'layout/latest';
-
-
-@import 'components/navigation'; // Could be here or in layout
-@import 'components/cards';
-
-
-
-
+@import "components/navigation";
+@import "components/cards";
