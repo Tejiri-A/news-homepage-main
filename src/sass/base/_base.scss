@@ -32,6 +32,16 @@ $spacing-xl:   2rem;    // 30px    (2 * 15)
 $spacing-xxl:  3rem;    // 45px    (3 * 15)
 $spacing-xxxl: 4rem;    // 60px    (4 * 15)
 
+// Font sizes
+$font-size-xs: 0.75rem;    // 11.25px (0.75 * 15)
+$font-size-sm: 0.875rem;   // 13.125px (0.875 * 15)
+$font-size-base: 1rem;    // 15px (1 * 15)  -  Typically the base font size
+$font-size-lg: 1.125rem;  // 16.875px (1.125 * 15)
+$font-size-xl: 1.25rem;   // 18.75px (1.25 * 15)
+$font-size-h3: 1.5rem;   // 22.5px (1.5 * 15) -  Heading 3
+$font-size-h2: 2rem;     // 30px (2 * 15)   -  Heading 2
+$font-size-h1: 2.5rem;
+
 // Media queries
 $breakpoint-small: 37.5em; // 600px
 $breakpoint-medium: 56.25em; // 900px

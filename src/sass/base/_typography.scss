@@ -1,0 +1,19 @@
+
+%heading{
+    font-weight: $font-extrabold;
+    color: $color-neutral-very-dark-blue;
+}
+.heading-1{
+    @extend %heading;
+    font-size: $font-size-h1;
+}
+.heading-2{
+    color: $color-primary-soft-red;
+    font-size: $font-size-h2;
+}
+.heading-3{
+    @extend %heading;
+}
+.paragraph-1{
+    color: $color-neutral-dark-grayish-blue;
+}
