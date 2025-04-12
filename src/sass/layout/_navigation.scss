@@ -1,0 +1,16 @@
+.nav{
+    width: min(90vw, 1111px);
+    margin: $spacing-xl auto;
+    &-center{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__toggle{
+        border: none;
+        background: transparent;
+    }
+    &__items{
+        display: none;
+    }
+}
