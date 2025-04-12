@@ -1,0 +1,24 @@
+.highlighted-stories{
+    margin: $spacing-xxxl 0;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xl;
+
+    &__item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(3, max-content);
+        column-gap: $spacing-md;
+        align-items: center;
+
+        &-number{
+            font-size: $font-size-h2;
+            font-weight: $font-extrabold;
+            color: $color-primary-soft-red;
+        }
+
+        &-img{
+            grid-row: 1/-1;
+        }
+    }
+}
