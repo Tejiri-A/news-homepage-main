@@ -1,6 +1,10 @@
 .latest-section {
   background-color: $color-neutral-very-dark-blue;
-  padding: $spacing-md;
+  padding: $spacing-lg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   @media only screen and (min-width:$breakpoint-large) {
         margin: 0;
@@ -9,6 +13,8 @@
     }
 
   .heading-2{
+    align-self: flex-start;
+    color: $color-primary-soft-red;
     @media only screen and (min-width:$breakpoint-large){
       font-size: $font-size-h1;
     }
@@ -31,5 +37,8 @@
       color: $color-primary-soft-orange;
       cursor: pointer;
     }
+  }
+  .paragraph-1{
+    font-weight: $font-bold;
   }
 }

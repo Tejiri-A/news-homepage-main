@@ -50,10 +50,15 @@ $breakpoint-extra-large: 112.5em; // 1800px
 
 :root {
   font-size: 93.75%;
+
+  @media only screen and (min-width:$breakpoint-large) {
+    font-size: 100%;
+  }
 }
 
 body {
   font-family: $font-primary;
+  background-color: $color-neutral-off-white;
 }
 
 .overlay {
