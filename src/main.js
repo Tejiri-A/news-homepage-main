@@ -13,3 +13,14 @@ btnOpen.addEventListener('click', () => {
 btnClose.addEventListener('click', () => {
     navList.classList.remove('show__nav')
 })
+
+// SMOOTH SCROLLING
+navList.addEventListener('click', e => {
+    e.preventDefault()
+    if (e.target.classList.contains('nav__link')){
+        const id = e.target.getAttribute('href')
+        console.log(document.querySelector(id));
+        document.querySelector(id).scrollIntoView({behavior: 'smooth'})
+    }
+    
+})
