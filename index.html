@@ -20,7 +20,7 @@
     <nav class="nav">
       <div class="nav-center">
         <img src="./src/assets/images/logo.svg" alt="logo" class="nav__logo" />
-        <button class="nav__toggle">
+        <button class="nav__toggle" id="nav__open">
           <img
             src="./src/assets/images/icon-menu.svg"
             alt="toggle icon"
@@ -28,13 +28,18 @@
           />
         </button>
       </div>
-      <ul class="nav__items">
-        <li class="nav__item"><a href="" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="" class="nav__link">New</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Popular</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Trending</a></li>
-        <li class="nav__item"><a href="" class="nav__link">Categories</a></li>
-      </ul>
+      <div class="nav__list">
+        <button class="nav__toggle" id="nav__close">
+          <img src="./src/assets/images/icon-menu-close.svg" alt="">
+        </button>
+        <ul class="nav__items">
+          <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="" class="nav__link">New</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Popular</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Trending</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Categories</a></li>
+        </ul>
+      </div>
     </nav>
 
     <header class="header">
