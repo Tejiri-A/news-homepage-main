@@ -1,104 +1,107 @@
-.nav{
-    width: min(90vw, 1111px);
-    margin: $spacing-xl auto;
+.nav {
+  width: min(90vw, 1200px);
+  margin: $spacing-xl auto;
+
+  @media only screen and (min-width: $breakpoint-medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     @media only screen and (min-width: $breakpoint-medium) {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    &-center{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        @media only screen and (min-width: $breakpoint-medium) {
-            display: block;
-        }
+      display: block;
     }
-    &__toggle{
-        border: none;
-        background: transparent;
-        cursor: pointer;
-        transition: transform 0.4s;
-        &:active{
-            transform: scale(1.5);
-        }
-
-        @media only screen and (min-width: $breakpoint-medium) {
-            display: none;
-        }
-    }
-    &__list{
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        width: min(68vw, 400px);
-        background-color: $color-neutral-off-white;
-        padding: 2rem $spacing-lg;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 6rem;
-        // border: 2px solid black;
-        opacity: 0;
-        transform: translateX(100%);
-        transition: transform .5s linear;
-
-        @media only screen and (min-width: $breakpoint-medium){
-            position: static;
-            width: fit-content;
-            transform: unset;
-            opacity: 1;
-        }
-
-        .nav__toggle{
-            align-self: flex-end;
-
-            @media only screen and (min-width: $breakpoint-medium){
-                display: none;
-            }
-        }
+  }
+  &__toggle {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.4s;
+    &:active {
+      transform: scale(1.5);
     }
 
-    .show__nav{
-        opacity: 1;
-        transform: translateX(0);
+    @media only screen and (min-width: $breakpoint-medium) {
+      display: none;
+    }
+  }
+  &__list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(68vw, 400px);
+    background-color: $color-neutral-off-white;
+    padding: 2rem $spacing-lg;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 6rem;
+    // border: 2px solid black;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s linear;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      position: static;
+      width: fit-content;
+      transform: unset;
+      opacity: 1;
     }
 
-    &__items{
-        align-self: stretch;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: $spacing-xl;
+    .nav__toggle {
+      align-self: flex-end;
 
-         @media only screen and (min-width: $breakpoint-medium){
-            flex-direction: row;
-        }
-
+      @media only screen and (min-width: $breakpoint-medium) {
+        display: none;
+      }
     }
-    &__item{
-        padding: $spacing-xs;
+  }
 
-        @media only screen and (min-width: $breakpoint-medium){
-            padding: unset;
-        }
-    }
-    &__link{
-        text-decoration: none;
-        color: $color-neutral-very-dark-blue;
-        font-weight: $font-bold;
-        font-size: $font-size-xl;
-        display: block;
-        width: 100%;
-        height: 100%;
+  .show__nav {
+    opacity: 1;
+    transform: translateX(0);
+  }
 
-        @media only screen and (min-width: $breakpoint-medium){
-            font-weight: $font-regular;
-            color: $color-neutral-dark-grayish-blue;
-            font-size: $font-size-base;
-        }
+  &__items {
+    align-self: stretch;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xl;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      flex-direction: row;
     }
+  }
+  &__item {
+    padding: $spacing-xs;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      padding: unset;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-neutral-very-dark-blue;
+    font-weight: $font-bold;
+    font-size: $font-size-xl;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      color: $color-primary-soft-red;
+    }
+
+    @media only screen and (min-width: $breakpoint-medium) {
+      font-weight: $font-regular;
+      color: $color-neutral-dark-grayish-blue;
+      font-size: $font-size-base;
+    }
+  }
 }

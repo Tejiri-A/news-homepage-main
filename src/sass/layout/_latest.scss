@@ -4,8 +4,15 @@
 
   @media only screen and (min-width:$breakpoint-large) {
         margin: 0;
-        grid-column: 4 / span 1;
+        // grid-column: 4 / span 2;
+        flex: 1 1 354px;
     }
+
+  .heading-2{
+    @media only screen and (min-width:$breakpoint-large){
+      font-size: $font-size-h1;
+    }
+  }
 
   &__item{
     padding: $spacing-xl 0;
@@ -19,5 +26,10 @@
     color: $color-neutral-off-white;
     font-weight: $font-bold;
     margin-bottom: $spacing-xs;
+
+    &:hover{
+      color: $color-primary-soft-orange;
+      cursor: pointer;
+    }
   }
 }

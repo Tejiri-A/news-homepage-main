@@ -1,12 +1,14 @@
 .main-container{
-    width: min(90vw, 1111px);
+    width: min(90vw, 1200px);
     margin: $spacing-sm auto;
     overflow: hidden;
 
     @media only screen and (min-width:$breakpoint-large) {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        // grid-template-rows: 70vh;
-        column-gap: 1rem;
+        // display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        // // grid-template-rows: 70vh;
+        // column-gap: 1rem;
+        display: flex;
+        gap: 1rem;
     }
 }

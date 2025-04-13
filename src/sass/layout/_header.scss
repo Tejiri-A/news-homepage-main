@@ -5,13 +5,14 @@
 }
 
 .header{
-    width: min(90vw, 1111px);
+    width: min(90vw, 1200px);
     margin: $spacing-xl auto;
     @extend %flex-mobile;
 
     @media only screen and (min-width:$breakpoint-large) {
         margin: 0;
-        grid-column: 1 / 4;
+        // grid-column: 1 / 4;
+        flex: 1 1 727px;
         width: unset;
 
         display: grid;
@@ -53,6 +54,7 @@
         padding: $spacing-sm $spacing-xl;
         letter-spacing: 2px;
         transition: all .5s;
+        margin-top: auto;
 
         &:hover, &:active{
             color: $color-neutral-off-white;
