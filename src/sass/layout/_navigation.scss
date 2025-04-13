@@ -1,10 +1,20 @@
 .nav{
     width: min(90vw, 1111px);
     margin: $spacing-xl auto;
+
+    @media only screen and (min-width: $breakpoint-medium) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     &-center{
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media only screen and (min-width: $breakpoint-medium) {
+            display: block;
+        }
     }
     &__toggle{
         border: none;
@@ -13,6 +23,10 @@
         transition: transform 0.4s;
         &:active{
             transform: scale(1.5);
+        }
+
+        @media only screen and (min-width: $breakpoint-medium) {
+            display: none;
         }
     }
     &__list{
@@ -28,15 +42,28 @@
         align-items: start;
         gap: 6rem;
         // border: 2px solid black;
+        opacity: 0;
         transform: translateX(100%);
         transition: transform .5s linear;
 
+        @media only screen and (min-width: $breakpoint-medium){
+            position: static;
+            width: fit-content;
+            transform: unset;
+            opacity: 1;
+        }
+
         .nav__toggle{
             align-self: flex-end;
+
+            @media only screen and (min-width: $breakpoint-medium){
+                display: none;
+            }
         }
     }
 
     .show__nav{
+        opacity: 1;
         transform: translateX(0);
     }
 
@@ -47,9 +74,17 @@
         flex-direction: column;
         gap: $spacing-xl;
 
+         @media only screen and (min-width: $breakpoint-medium){
+            flex-direction: row;
+        }
+
     }
     &__item{
         padding: $spacing-xs;
+
+        @media only screen and (min-width: $breakpoint-medium){
+            padding: unset;
+        }
     }
     &__link{
         text-decoration: none;
@@ -59,5 +94,11 @@
         display: block;
         width: 100%;
         height: 100%;
+
+        @media only screen and (min-width: $breakpoint-medium){
+            font-weight: $font-regular;
+            color: $color-neutral-dark-grayish-blue;
+            font-size: $font-size-base;
+        }
     }
 }

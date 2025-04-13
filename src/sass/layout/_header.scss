@@ -6,15 +6,40 @@
 
 .header{
     width: min(90vw, 1111px);
-    margin: 0 auto;
+    margin: $spacing-xl auto;
     @extend %flex-mobile;
 
+    @media only screen and (min-width:$breakpoint-large) {
+        margin: 0;
+        grid-column: 1 / 4;
+        width: unset;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    picture{
+        @media only screen and (min-width:$breakpoint-large){
+            grid-column: 1 / -1;
+        }
+    }
+
     &__intro{
-        @extend %flex-mobile
+        @extend %flex-mobile;
+        @media only screen and (min-width:$breakpoint-large){
+            grid-column: 1/-1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .heading-1{
+                font-size: 3.5rem;
+                line-break: loose;
+            }
+        }
     }
 
     &__cta{
-        @extend %flex-mobile
+        @extend %flex-mobile;
     }
 
     .cta-btn{
@@ -27,10 +52,15 @@
         text-transform: uppercase;
         padding: $spacing-sm $spacing-xl;
         letter-spacing: 2px;
+        transition: all .5s;
 
-        &:active, &:hover{
+        &:hover, &:active{
             color: $color-neutral-off-white;
             background: $color-neutral-very-dark-blue;
+        }
+
+        &:active{
+            transform: scale(0.9);
         }
     }
 }

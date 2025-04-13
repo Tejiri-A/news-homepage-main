@@ -2,6 +2,11 @@
   background-color: $color-neutral-very-dark-blue;
   padding: $spacing-md;
 
+  @media only screen and (min-width:$breakpoint-large) {
+        margin: 0;
+        grid-column: 4 / span 1;
+    }
+
   &__item{
     padding: $spacing-xl 0;
   }

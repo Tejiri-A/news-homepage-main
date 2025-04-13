@@ -6,13 +6,19 @@ const btnOpen = document.getElementById('nav__open')
 const btnClose = document.getElementById('nav__close')
 const navList = document.querySelector('.nav__list')
 
+const overlay = document.createElement('div');
+overlay.classList.add('overlay');
+document.body.appendChild(overlay);
+
 btnOpen.addEventListener('click', () => {
-    navList.classList.add('show__nav')
-})
+    navList.classList.add('show__nav');
+    overlay.classList.add('show__overlay');
+});
 
 btnClose.addEventListener('click', () => {
-    navList.classList.remove('show__nav')
-})
+    navList.classList.remove('show__nav');
+    overlay.classList.remove('show__overlay');
+});
 
 // SMOOTH SCROLLING
 navList.addEventListener('click', e => {

@@ -1,14 +1,11 @@
 .footer {
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
   background-color: $color-neutral-very-dark-blue;
-  padding: $spacing-md;
+  padding: 2.5rem $spacing-md;
   font-size: 11px;
   text-align: center;
   color: $color-neutral-off-white;
   overflow: hidden;
+  margin-top: auto;
 
   .container{
     width: min(90%, 1111px);
