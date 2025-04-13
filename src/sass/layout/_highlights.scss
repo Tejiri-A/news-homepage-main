@@ -1,15 +1,25 @@
 .highlighted-stories{
     margin: $spacing-xxxl 0;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    // gap: $spacing-xl;
+
+    // @media only screen and (min-width: $breakpoint-medium) {
+    //     flex-direction: row;
+    //     align-items: center;
+    // }
+    display: grid;
     gap: $spacing-xl;
+    grid-template-columns: repeat(auto-fit, minmax(323px, 1fr));
 
     &__item{
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(3, max-content);
+    
+        grid-template-rows: repeat(3, 42.7px);
         column-gap: $spacing-md;
         align-items: center;
+
 
         &-number{
             font-size: $font-size-h2;
@@ -17,8 +27,15 @@
             color: $color-primary-soft-red;
         }
 
-        &-img{
+        &-img-container{
             grid-row: 1/-1;
+            height: 100%;
+        }
+
+        &-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
