@@ -17,7 +17,7 @@
 
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav" role="navigation">
       <div class="nav-center">
         <img src="./src/assets/images/logo.svg" alt="logo" class="nav__logo" />
         <button class="nav__toggle" id="nav__open">
@@ -42,8 +42,8 @@
       </div>
     </nav>
 
-    <div class="main-container">
-      <header class="header" id="home">
+    <header class="main-container" role="banner">
+      <section class="header" id="home">
         <picture>
           <source
             media="(min-width: 768px)"
@@ -66,7 +66,7 @@
             <a href="#" class="cta-btn">Read more</a>
           </div>
         </div>
-      </header>
+      </section>
       
         <section class="latest-section" id="new">
           <h2 class="heading-2">New</h2>
@@ -93,61 +93,61 @@
             </div>
           </div>
         </section>
-    </div>
+    </header>
 
-      <section class="highlighted-stories" id="popular">
-        <div class="highlighted-stories__item">
-          <div class="highlighted-stories__item-img-container">
-            <img
-              src="./src/assets/images/image-retro-pcs.jpg"
-              alt="retro pc"
-              class="highlighted-stories__item-img"
-            />
-          </div>
-          
-            <span class="highlighted-stories__item-number">01</span>
-            <h3 class="heading-3">Reviving Retro PCs</h3>
-            <p class="paragraph-1">
-              What happens when old PCs are given modern upgrades?
-            </p>
-          
-        </div>
-
-        <div class="highlighted-stories__item">
-          <div class="highlighted-stories__item-img-container">
-            <img
-              src="./src/assets/images/image-top-laptops.jpg"
-              alt="ptop keyboard"
-              class="highlighted-stories__item-img"
-            />
-          </div>
-          
-            <span class="highlighted-stories__item-number">02</span>
-            <h3 class="heading-3">Top 10 Laptops of 2022</h3>
-            <p class="paragraph-1">
-              Our best picks for various needs and budgets.
-            </p>
-          
-        </div>
-
-        <div class="highlighted-stories__item">
-          <div class="highlighted-stories__item-img-container">
-            <img
-              src="./src/assets/images/image-gaming-growth.jpg"
-              alt="controller"
-              class="highlighted-stories__item-img"
-            />
-          </div>
-            <span class="highlighted-stories__item-number">03</span>
-            <h3 class="heading-3">The Growth of Gaming</h3>
-            <p class="paragraph-1">
-              How the pandemic has sparked fresh opportunities.
-            </p>
+      <main role="main">
+        <section class="highlighted-stories" id="popular">
+          <div class="highlighted-stories__item">
+            <div class="highlighted-stories__item-img-container">
+              <img
+                src="./src/assets/images/image-retro-pcs.jpg"
+                alt="retro pc"
+                class="highlighted-stories__item-img"
+              />
+            </div>
         
-      </section>
+              <span class="highlighted-stories__item-number">01</span>
+              <h3 class="heading-3">Reviving Retro PCs</h3>
+              <p class="paragraph-1">
+                What happens when old PCs are given modern upgrades?
+              </p>
+        
+          </div>
+          <div class="highlighted-stories__item">
+            <div class="highlighted-stories__item-img-container">
+              <img
+                src="./src/assets/images/image-top-laptops.jpg"
+                alt="ptop keyboard"
+                class="highlighted-stories__item-img"
+              />
+            </div>
+        
+              <span class="highlighted-stories__item-number">02</span>
+              <h3 class="heading-3">Top 10 Laptops of 2022</h3>
+              <p class="paragraph-1">
+                Our best picks for various needs and budgets.
+              </p>
+        
+          </div>
+          <div class="highlighted-stories__item">
+            <div class="highlighted-stories__item-img-container">
+              <img
+                src="./src/assets/images/image-gaming-growth.jpg"
+                alt="controller"
+                class="highlighted-stories__item-img"
+              />
+            </div>
+              <span class="highlighted-stories__item-number">03</span>
+              <h3 class="heading-3">The Growth of Gaming</h3>
+              <p class="paragraph-1">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+        
+        </section>
+      </main>
     
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="container">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
